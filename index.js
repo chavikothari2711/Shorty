@@ -11,7 +11,7 @@ connectDB();
 const app = express();
 const PORT=process.env.PORT || 8001;
 
-const filename = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(cors());
